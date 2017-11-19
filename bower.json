@@ -1,0 +1,22 @@
+{
+  "name": "contact-list",
+  "description": "ContactList Maket It Real AngularJS Project",
+  "main": "index.js",
+  "authors": [
+    "Alejandro JSR7 <AlejandroJSR7@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/AlejandroJSR7/Contact-List-AngularJS-MIR",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendors/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "3.3.4"
+  }
+}

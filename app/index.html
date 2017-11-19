@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactListApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact List - Make It Real AngularJS Project</title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/styles/contact-list.css">
+  <!-- endinject -->
+</head>
+<body>
+  <div ng-controller="ContactListController as contactListVM">
+    <h1>{{contactListVM.msg}}</h1>
+  </div>
+  <!-- bower:js -->
+  <script src="vendors/angular/angular.js"></script>
+  <script src="vendors/jquery/dist/jquery.js"></script>
+  <script src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- inject:js -->
+  <script src="/scripts/contact-list.js"></script>
+  <script src="/scripts/controllers/contact-list.controller.js"></script>
+  <!-- endinject -->
+</body>
+</html>

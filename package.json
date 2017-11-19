@@ -1,0 +1,16 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "ContactList Maket It Real AngularJS Project",
+  "main": "index.js",
+  "repository": "git@github.com:AlejandroJSR7/Contact-List-AngularJS-MIR.git",
+  "author": "Alejandro JSR7 <AlejandroJSR7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.3.0",
+    "wiredep": "^4.0.0"
+  }
+}
