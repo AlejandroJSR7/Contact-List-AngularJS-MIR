@@ -1,1 +1,1 @@
-# Contact-List-AngularJS-MIR
+# Contacts List AngularJS-MakeItReal Project

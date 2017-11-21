@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+.contacts-list {}
+.contacts-title {
+  color: #FFAA00;
+  font-weight: 400;
+  font-size: 32px;
+}
+.contacts-title--btn-add {
+  color: #FFAA00;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.contacts-title--btn-add i {
+  font-size: 16px;
+}
+.contacts-title--btn-add:hover {
+  color: #FFAA00;
+}

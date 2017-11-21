@@ -44,7 +44,7 @@ gulp.task('wiredep', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./app/*.html'], ['html']);
+  gulp.watch(['./app/**/*.html'], ['html']);
   gulp.watch(['./app/scripts/**/*.js'], ['inject']);
   gulp.watch(['./app/styles/**/*.css'], ['inject']);
   gulp.watch(['./bower.json'], ['wiredep']);

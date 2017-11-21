@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="contactListApp">
+<html lang="en" ng-app="ContactsListApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,42 @@
   <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css" />
   <!-- endbower -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="/styles/contact-list.css">
+  <link rel="stylesheet" href="/styles/contacts-list.css">
   <!-- endinject -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script> -->
+
 </head>
 <body>
-  <div ng-controller="ContactListController as contactListVM">
-    <h1>{{contactListVM.msg}}</h1>
+  <div class="container-fluid">
+    <ng-view></ng-view>
   </div>
   <!-- bower:js -->
   <script src="vendors/angular/angular.js"></script>
   <script src="vendors/jquery/dist/jquery.js"></script>
   <script src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="vendors/angular-route/angular-route.js"></script>
+  <script src="vendors/firebase/firebase.js"></script>
+  <script src="vendors/angularfire/dist/angularfire.js"></script>
   <!-- endbower -->
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC7gKEu_Er4KT8sVgakR--Q_tIUVDFX32I",
+      authDomain: "contacts-list-1fb7e.firebaseapp.com",
+      databaseURL: "https://contacts-list-1fb7e.firebaseio.com",
+      projectId: "contacts-list-1fb7e",
+      storageBucket: "contacts-list-1fb7e.appspot.com",
+      messagingSenderId: "268803147864"
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- inject:js -->
-  <script src="/scripts/contact-list.js"></script>
-  <script src="/scripts/controllers/contact-list.controller.js"></script>
+  <script src="/scripts/contacts-list.js"></script>
+  <script src="/scripts/route-main.js"></script>
+  <script src="/scripts/controllers/contact-add-new.controller.js"></script>
+  <script src="/scripts/controllers/contacts-list.controller.js"></script>
+  <script src="/scripts/services/contact-add-new.service.js"></script>
   <!-- endinject -->
+
 </body>
 </html>
